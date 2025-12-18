@@ -1,4 +1,4 @@
-# Portfolio Web - [Tu Nombre]
+# Portfolio Web
 
 <p align="left">
   <img src="https://img.shields.io/badge/Estado-En%20Desarrollo-orange?style=flat-square" alt="Estado">
