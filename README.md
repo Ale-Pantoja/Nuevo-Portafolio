@@ -1,46 +1,25 @@
-# Astro Starter Kit: Basics
+# Portfolio Web - [Tu Nombre]
 
-```sh
-npm create astro@latest -- --template basics
-```
+<p align="left">
+  <img src="https://img.shields.io/badge/Estado-En%20Desarrollo-orange?style=flat-square" alt="Estado">
+  <img src="https://img.shields.io/badge/Astro-5.13-BC52EE?style=flat-square&logo=astro" alt="Astro">
+  <img src="https://img.shields.io/badge/Tailwind-4.1-38B2AC?style=flat-square&logo=tailwind-css" alt="Tailwind">
+  <img src="https://img.shields.io/badge/JavaScript-Ready-Yellow?style=flat-square&logo=javascript" alt="JavaScript">
+</p>
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+**Estado del Proyecto:** 🚧 En Desarrollo Activo  
+**Última Actualización:** [Fecha Actual]  
+**Versión:** 1.0.0 (Fase de Desarrollo)
 
-## 🚀 Project Structure
+---
 
-Inside of your Astro project, you'll see the following folders and files:
+## 📋 Descripción del Proyecto
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+Portfolio profesional desarrollado como una **Single Page Application (SPA)** moderna, diseñado para mostrar experiencia, proyectos y habilidades técnicas. La implementación prioriza el rendimiento, la accesibilidad y las mejores prácticas de desarrollo web contemporáneo.
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🛠 Stack Tecnológico Principal
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### Core Framework
+* **Astro 5.13** - Framework web con enfoque en rendimiento (Island Architecture).
+* **Tailwind CSS 4.1** - Utility-first CSS framework para diseño ágil.
+* **TypeScript** - Tipado estático para un desarrollo robusto y escalable.
