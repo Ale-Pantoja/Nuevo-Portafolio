@@ -4,17 +4,52 @@ import Contact from "../contact/Contact.astro";
 import About from "../about/About.astro";
 ---
 
-<div id="head" class="text-center my-8 space-y-4">
-	<h1>Portfolio</h1>
-	<p>A collection of my projects and works.</p>
-	
-	<a href="/projects-container">View projects</a>
-	<a href="/about">About me</a>
+<div id="head" class="text-center pt-2 bg-gradient-to-r from-emerald-50 to-indigo-100">
+	<div class="relative min-h-[70vh] flex flex-col items-center justify-center text-center px-4 overflow-hidden">   
+    
+    <div class="relative z-10 space-y-6">
+        <h1 class="text-7xl md:text-9xl font-serif italic tracking-tighter text-gray-900 leading-none">
+            Port<br class="md:hidden">folio
+        </h1>
+        
+        <div class="flex flex-col items-center gap-4">
+			<div class="w-12 h-0.5 bg-indigo-400 mb-2"></div>           
+				<p class="text-xl md:text-2xl font-light tracking-widest text-gray-500 max-w-lg mx-auto leading-relaxed">
+					Hi, i´m <span class="text-gray-900 font-serif italic tracking-normal animate-pulse">Alejandra</span> and this is a collection of my <span class="text-gray-800 font-serif tracking-normal italic">projects</span> and works.
+				</p>
+        </div>
+    </div>
+
+    <div class="absolute top-1/4 right-[15%] animate-bounce hidden md:block">
+        <svg class="text-indigo-300 w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </svg>
+    </div>
+
+    <div class="absolute bottom-1.5 left-[15%] animate-bounce hidden md:block">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+			<path fill="#566ab5" d="M13 2h-2v4h2zm2 6H9v2H7v4h2v4h6v-4h2v-4h-2zm0 2v4h-2v2h-2v-2H9v-4zM9 20h6v2H9zm14-9v2h-4v-2zM5 13v-2H1v2zm12-7h2v2h-2zm2 0h2V4h-2zM5 6h2v2H5zm0 0V4H3v2z" />
+		</svg>
+    </div>
 </div>
 
-<div id="projects-container">
-	<Projects>
+	<div class="flex justify-center items-end gap-1 translate-y-px">
+        <a href="#projects" 
+           class="px-10 py-5 text-[1.10em] bg-indigo-400 text-white font-light rounded-t-[2.5rem] shadow-[0_-5px_15px_rgba(0,0,0,0.05)] transition-colors">
+            View projects
+        </a>
+        <a href="/about" 
+           class="px-10 py-5 text-[1.10em] bg-transparent text-gray-600 font-normal hover:text-gray-800 transition-colors">
+            About me
+        </a>
+    </div>
+
 </div>
+
+<section id="projects-section" class="w-full bg-indigo-400 py-20">
+	<Projects>
+</section>
+
 
 <div id="about-container">
 	<About>
