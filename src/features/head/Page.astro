@@ -34,24 +34,22 @@ import About from "../about/About.astro";
 </div>
 
 	<div class="flex justify-center items-end gap-1 translate-y-px">
-        <a href="#projects" 
-           class="px-10 py-5 text-[1.10em] bg-indigo-400 text-white font-light rounded-t-[2.5rem] shadow-[0_-5px_15px_rgba(0,0,0,0.05)] transition-colors">
-            View projects
-        </a>
-        <a href="/about" 
-           class="px-10 py-5 text-[1.10em] bg-transparent text-gray-600 font-normal hover:text-gray-800 transition-colors">
+        <button id="project-btn" class="px-10 py-5 text-[1.10em] bg-indigo-400 text-white font-light rounded-t-[2.5rem] shadow-[0_-5px_15px_rgba(0,0,0,0.05)] transition-colors">
+            View Projects
+        </button>
+        <button id="about-btn" class="px-10 py-5 text-[1.10em] bg-transparent text-gray-600 font-normal hover:text-gray-800 transition-colors">
             About me
-        </a>
+        </button>
     </div>
 
 </div>
 
-<section id="projects-section" class="w-full bg-indigo-400 py-20">
+<section id="projects-section" class=" w-full bg-indigo-400 py-20">
     <Projects />
 </section>
 
 
-<div id="about-section">
+<div id="about-section" class="hidden w-full bg-teal-500 py-20">
 	<About />
 </div>
 
@@ -59,3 +57,42 @@ import About from "../about/About.astro";
 	<Contact />
 </div>
 
+<script>
+    const projectsSection = document.querySelector('#projects-section');
+    const aboutSection = document.querySelector('#about-section');
+    const projectBtn = document.querySelector('#project-btn');
+    const aboutBtn = document.querySelector('#about-btn');
+
+    if (projectBtn) {
+        projectBtn.addEventListener('click', () => {
+            projectsSection?.classList.remove('hidden');
+            aboutSection?.classList.add('hidden');
+
+            projectBtn.classList.add('bg-indigo-400', 'text-white', 'font-light', 'rounded-t-[2.5rem]', 'shadow-[0_-5px_15px_rgba(0,0,0,0.05)]', 'transition-colors');
+            projectBtn.classList.remove('bg-transparent', 'text-gray-600', 'font-normal', 'hover:text-gray-800');
+
+            aboutBtn?.classList.add('bg-transparent', 'text-gray-600', 'font-normal', 'hover:text-gray-800');
+            aboutBtn?.classList.remove('bg-teal-500', 'text-white', 'font-light', 'rounded-t-[2.5rem]', 'shadow-[0_-5px_15px_rgba(0,0,0,0.05)]', 'transition-colors');
+        });
+    } else {
+        projectsSection?.classList.add('hidden');
+        aboutSection?.classList.remove('hidden');
+    }
+
+    if (aboutBtn) {
+        aboutBtn.addEventListener('click', () => {
+            aboutSection?.classList.remove('hidden');
+            projectsSection?.classList.add('hidden');
+
+            aboutBtn.classList.add('bg-teal-500', 'text-white', 'font-light', 'rounded-t-[2.5rem]', 'shadow-[0_-5px_15px_rgba(0,0,0,0.05)]', 'transition-colors');
+            aboutBtn.classList.remove('bg-transparent', 'text-gray-600', 'font-normal', 'hover:text-gray-800');
+
+            projectBtn?.classList.add('bg-transparent', 'text-gray-600', 'font-normal', 'hover:text-gray-800');
+            projectBtn?.classList.remove('bg-indigo-400', 'text-white', 'font-light', 'rounded-t-[2.5rem]', 'shadow-[0_-5px_15px_rgba(0,0,0,0.05)]', 'transition-colors');
+        });
+    } else {
+        aboutSection?.classList.add('hidden');
+        projectsSection?.classList.remove('hidden');
+    }
+    
+</script>
