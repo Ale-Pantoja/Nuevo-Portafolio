@@ -5,6 +5,8 @@ import icon from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://Ale-Pantoja.github.io',
+  base: 'Nuevo-Portafolio',
   vite: {
     plugins: [tailwindcss()]
   },
